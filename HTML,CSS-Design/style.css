@@ -1,0 +1,208 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f8f8;
+  color: #333;
+}
+
+nav {
+  position: fixed;        
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #222;
+  padding: 1rem 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 1.5rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff6600;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+section {
+  padding: 5rem 2rem;
+  margin-top: 3rem;
+}
+
+
+.info {
+  position: relative;
+  height: 100vh;
+  background: url("Anime_Haikyuu.jpg") no-repeat center center/cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 2rem;
+  color: white;
+}
+
+
+.info .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); 
+  z-index: 1;
+}
+
+
+.info-content {
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+}
+
+.info-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #ff6600;
+}
+
+.info-content p {
+  font-size: 1.2rem;
+  margin: 0.3rem 0;
+}
+
+
+.intro {
+  margin: 2rem auto;
+  max-width: 900px;
+  padding: 1.5rem;
+  background: white;
+  border-left: 6px solid #ff6600;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.seasons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+  padding: 0 1rem;
+}
+
+.season-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.season-card:hover {
+  transform: translateY(-5px);
+}
+
+.season-card h3 {
+  margin-bottom: 0.5rem;
+  color: #ff6600;
+}
+
+.news {
+  margin: 2rem auto;
+  max-width: 900px;
+  padding: 1.5rem;
+  background: white;
+  border-left: 6px solid #ff6600;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.members-section{
+  margin: 2rem auto;
+  max-width: 900px;
+  padding: 1.5rem;
+  background: white;
+  border-left: 6px solid #ff6600;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.members {
+  display: flex;                 
+  justify-content: center;       
+  gap: 2rem;                     
+  margin: 2rem auto;
+  flex-wrap: wrap;               
+}
+
+.members-card {
+  text-align: center;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  width: 200px;                  
+}
+
+.members-card:hover {
+  transform: translateY(-5px);
+}
+
+/* fix image size */
+.members-card img {
+  width: 100%;
+  height: 250px;                 
+  object-fit: cover;             
+  border-radius: 8px;
+}
+
+.members-card h3 {
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+  color: #ff6600;
+}
+
+
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: #ff6600;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
